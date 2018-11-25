@@ -1,16 +1,13 @@
 <!doctype html>
-<html <?php better_amp_language_attributes(); ?> amp>
+<html amp <?php better_amp_language_attributes(); ?>>
 <head>
 	<meta charset="utf-8">
 	<meta name="viewport" content="width=device-width,minimum-scale=1,maximum-scale=1,initial-scale=1">
 	<meta name="theme-color" content="<?php echo better_amp_get_theme_mod( 'better-amp-color-theme' ); ?>">
-
 	<?php better_amp_head() ?>
 </head>
 <?php
-
 $body_class = 'body';
-
 if ( better_amp_get_theme_mod( 'better-amp-header-sticky', FALSE ) ) {
 	$body_class .= ' sticky-nav';
 }
